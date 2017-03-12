@@ -1,0 +1,104 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <meta name="keywords" content="Discord,Bot,Music,Youtube,Soundcloud,Twitch,Radio,DiscordFM,dabBot">
+  <meta description="A Discord bot providing high quality music from YouTube, Soundcloud, Twitch, UK Radio Stations, Discord.FM and much more">
+
+  <title>dabBot &mdash; Providing high quality music on Discord</title>
+
+  <link rel="icon" href="dabb.png" type="image/x-icon">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet" />
+
+  <style>
+    body,
+    html {
+      height: 100%;
+      width: 100%;
+    }
+
+    body {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #222;
+      background-image: url("bg.png");
+      flex-direction: row;
+      font-family: "Montserrat", sans-serif;
+      overflow: hidden;
+    }
+    body:before {
+      content: '';
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      background-color: #000;
+      opacity: 0.9;
+      z-index: -1;
+    }
+
+    .main {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+    .main .brand {
+      margin-right: 15px;
+    }
+    .main .title {
+      font-size: 5em;
+      color: #ddd;
+    }
+    .main .buttons {
+      width: 50%;
+      display: flex;
+      margin-left: 30px;
+      justify-content: space-between;
+    }
+    .main .buttons .btn {
+      background-color: #222;
+      text-decoration: none;
+      color: #eee;
+      padding: 18px 16px;
+      text-transform: uppercase;
+      font-weight: 200;
+      font-size: 0.78em;
+      border-radius: 2px;
+      opacity: 0.6;
+      transition: opacity 200ms;
+    }
+    .main .buttons .btn:nth-child(even) {
+      margin: 0 10px;
+    }
+    .main .buttons .btn:hover {
+      opacity: 1;
+    }
+
+  </style>
+</head>
+<body>
+
+  <section class="main">
+    <div class="brand">
+      <img src="dabb.png" alt="dabBot logo" class="brand__logo" />
+    </div>
+
+    <p class="title">dab</p>
+    <p class="title"><strong>Bot</strong></p>
+    
+    <div class="buttons">
+      <a href="https://discordapp.com/oauth2/authorize?client_id=270198738570444801&scope=bot&permissions=36752448" class="btn">Invite to Server</a>
+      <a href="https://discord.gg/MFgsBAs" class="btn">Join Support Server</a>
+      <a href="https://twitter.com/dabbBot" class="btn">Twitter</a>
+    </div>
+  </section>
+
+</body>
+</html>

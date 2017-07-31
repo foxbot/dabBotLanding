@@ -96,7 +96,7 @@
 
 <script>
   window.onload = function() {
-    if(!document.referrer.includes("discord.fm")) {
+    if(document.referrer.includes("discord.fm")) {
       var alert = document.getElementById("dfm-alert");
       alert.className += "alert";
       alert.innerHTML = "You've been referred by <b>discord.fm</b>. Use dabBot to play discord.fm playlists";

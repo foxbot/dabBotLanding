@@ -82,10 +82,30 @@
       opacity: 1;
     }
 
-  </style>
+.alert {
+    padding: 20px;
+    background-color: #555;
+    color: white;
+    margin-top: 3%;
+    align-self: flex-start;
+    justify-content: center;
+    position: absolute;
+}
+
+</style>
+
+<script>
+  window.onload = function() {
+    if(window.location.hash == "#discordfm") {
+      var alert = document.getElementById("dfm-alert");
+      alert.className += "alert";
+      alert.innerHTML = "You've been referred by <b>discord.fm</b>. Use dabBot to play discord.fm playlists";
+    }
+  }
+</script>
 </head>
 <body>
-
+    <div id="dfm-alert"></div>
   <section class="main">
     <div class="brand">
       <img src="dabb.png" alt="dabBot discord music bot logo" class="brand__logo" />
